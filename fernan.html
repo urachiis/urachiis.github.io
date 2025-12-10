@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Proyecto Fernan</title>
+<style>
+    body {
+        background-color: #1f8f1f;
+        font-family: Arial, sans-serif;
+        color: white;
+        text-align: center;
+    }
+
+    .img-box {
+        margin: 20px;
+    }
+
+    #navideno-box {
+        display: none;
+        margin-top: 30px;
+    }
+
+    #locked {
+        filter: brightness(40%);
+    }
+
+    .chains {
+        width: 150px;
+    }
+
+    .key {
+        width: 120px;
+        margin-top: 20px;
+        animation: float 2s infinite alternate;
+    }
+
+    @keyframes float {
+        from { transform: translateY(0); }
+        to { transform: translateY(-10px); }
+    }
+
+    #snow {
+        display: none;
+        font-size: 30px;
+        margin-top: 20px;
+    }
+</style>
+</head>
+<body>
+
+<h1>La Era Dorada de Fernanfloo</h1>
+
+<audio controls autoplay loop>
+    <source src="https://cdn.discordapp.com/attachments/1398429999710736387/1448183963700166697/El_Rap_de_BabyFloo_-_Bambiel.mp3?ex=693a55ea&is=6939046a&hm=b1f543bb2dd967b8e9aeb5a7aacb48433d2690fe0791628d91291f48e870fe3f&" type="audio/mpeg">
+</audio>
+
+<!-- Tus imágenes -->
+<div class="img-box">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUWR3LQYeSqv8NMcpyPxGctgS-Hg6RnIROKb9dMajQjw&s=10" width="300">
+    <p>Fernanfloo en su época clásica: humor, caos y creatividad pura.</p>
+</div>
+
+<div class="img-box">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRt3dW4W33Qj_cqkD6p_qZ8CZMuSpNzUqsFLeHA77FGSw&s=10" width="300">
+    <p>La energía que definió un canal único en YouTube.</p>
+</div>
+
+<!-- Bloque navideño bloqueado -->
+<h2>🎄 Contenido Exclusivo – Se desbloquea el 25 de diciembre 🎄</h2>
+
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLAO_TA6or5938_kGAdjHcCUB6iAoCZnBb0VK_bLBLs6k2Lvb0CU20o9k&s=10" class="chains">
+
+<div>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbzcPbChi5Eb0z-hV4FeXKMWS9qgfKAGzTO8CiuEpdpw&s=10"
+         width="280" id="locked">
+</div>
+
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLAO_TA6or5938_kGAdjHcCUB6iAoCZnBb0VK_bLBLs6k2Lvb0CU20o9k&s=10" class="chains">
+
+<br>
+
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbzcPbChi5Eb0z-hV4FeXKMWS9qgfKAGzTO8CiuEpdpw&s=10" class="key" id="key">
+
+<div id="snow">❄️❄️💥 EXPLOSIÓN DE NIEVE 💥❄️❄️</div>
+
+<div id="navideno-box">
+    <h2>🎅 Fernan Navideño Liberado 🎅</h2>
+    <p>“Nunca dejes de crear, nunca dejes de soñar.”</p>
+</div>
+
+<script>
+function checkUnlock() {
+    const today = new Date();
+    const unlockDate = new Date(today.getFullYear(), 11, 25); // 25 diciembre
+
+    if (today >= unlockDate) {
+        document.getElementById("locked").style.display = "none";
+        document.getElementById("navideno-box").style.display = "block";
+        document.getElementById("snow").style.display = "block";
+    }
+}
+
+checkUnlock();
+</script>
+
+<h2>La era dorada se está acabando...</h2>
+
+</body>
+</html>
